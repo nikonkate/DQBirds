@@ -434,6 +434,10 @@ while True:
                     # if i % 10 == 0:
                     #     saver.save(sess, path + '/model-' + str(i) + '.ckpt')
                     #     print("Saved Model")
+                else:
+                    s = s1
+                    if d:
+                        s = 'None'  # once done level get new first state
     except Exception as e:
         print("Error: ", e)
     finally:
